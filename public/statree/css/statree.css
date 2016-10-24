@@ -1,0 +1,127 @@
+.mobile-user-profile{
+    height: 76px;
+    width: 90px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.mobile-link{
+  height: 65px;
+  width: 90px;
+  margin-bottom: 100px;
+  position: relative;
+  bottom: 12px;
+}
+.mobile-image{
+    background: #fff;
+    width:46px;
+    height:50px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    font-family: 'Open Sans Light', sans-serif;
+}
+.mobile-image1{
+    background: #fff;
+    width:46px;
+    height:50px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 0.5%;
+    font-family: 'Open Sans Light', sans-serif;
+}
+.mobile-article-image{
+   width:46px;
+   height: 45px;
+}
+.nava-body{
+    width: 105%;
+    height: 130px;
+    position: fixed;
+    z-index: 2;
+    top: -2px;
+    right: 1px;
+    padding: 0.5%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    font-family: 'Open Sans Light', sans-serif;
+}
+.full-mobile-body{
+    margin-top: 26px;
+
+}
+.mobile-list li{
+     display: inline-block;
+     margin-left: 2%;
+    float: right;
+}
+.mobile-fulter{
+    width: 107.4%;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    font-family: 'Open Sans Light', sans-serif;
+    height: 50px;
+    position: relative;
+    right: 4%;
+    padding: 5%;
+    top: 10px;
+    text-align:left;
+}
+.natice-body{
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 14px;
+    color: forestgreen;
+}
+.moble-index{
+    margin-top: 30px;
+     background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    font-family: 'Open Sans Light', sans-serif;
+    font-size: 14px;
+    color: forestgreen;  
+}
+
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome{
+  width: 1100px;
+  background: red;
+}
+.caropage{
+  background: url("387606063_408c203f6c_z (1).jpg");
+}
+.sign-up li{
+  display: inline-block;
+}
+.welcome-index{
+  width: 80%;
+  height: 10px;
+  position: relative;
+  bottom: 44px;
+}
+.welcome-index-sub{
+  background: #151515;
+  width: 125%;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
+.welcome-index-sub1{
+  background: #1B95E4;
+  width: 125%;
+  height: 350px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
+.welcome-index-sub2{
+  background: #151515;
+  width: 125%;
+  height: 270px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}

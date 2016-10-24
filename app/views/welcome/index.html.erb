@@ -1,0 +1,205 @@
+<!-- Carousel
+   ================================================== -->
+<div id="myCarousel" class="carousel slide" style="position: relative;bottom: 20px">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+
+  </ol>
+  <style type="text/css">
+      .input-group-addon.primary {
+          color: rgb(255, 255, 255);
+          background-color: rgb(50, 118, 177);
+          border-color: rgb(40, 94, 142);
+      }
+      .input-group-addon.success {
+          color: rgb(255, 255, 255);
+          background-color: rgb(92, 184, 92);
+          border-color: rgb(76, 174, 76);
+      }
+      .input-group-addon.info {
+          color: rgb(255, 255, 255);
+          background-color: rgb(57, 179, 215);
+          border-color: rgb(38, 154, 188);
+      }
+      .input-group-addon.warning {
+          color: rgb(255, 255, 255);
+          background-color: rgb(240, 173, 78);
+          border-color: rgb(238, 162, 54);
+      }
+      .input-group-addon.danger {
+          color: rgb(255, 255, 255);
+          background-color: rgb(217, 83, 79);
+          border-color: rgb(212, 63, 58);
+      }
+  </style>
+  <div class="carousel-inner">
+    <div class="item active" style="height:610px ">
+      <%= image_tag "money-online.jpg" , :width=>"100%;",  :height=>"130px;" %>
+      <div class="container" style="position: relative;bottom: 680px;left: 10%">
+
+        <ul class="sign-up">
+          <li style="position: relative;bottom:130px;text-align: center;width: 55%;margin-right: 20%;right: 120px">
+            <div style="width: 500px;height: 100px;position: relative;color: #fff;top:200px">
+              <h1 style="font-size: 50px;position: relative;bottom: 110px">Best exchange rate</h1>
+              <div class="row" style="padding:30px 100px;opacity: 0.8;position: relative;bottom: 100px">
+                <h1 style="font-size: 50px;position: relative;right: 100px">No debate!</h1>
+                <br>
+                <br>
+                <br>
+                <div class="form-group" style="position: relative;right: 100px">
+                  <div class="input-group" data-validate="length" data-length="5">
+                    <input type="text" style="border-radius:20px 0px 0px 20px;height: 70px;width: 200%" class="form-control" name="validate-length" id="validate-length" placeholder="Enter your email for more info" required="">
+                    <span class="input-group-addon primary" style="border-radius:0px 20px 20px 0px;position: relative;left:170px"><span style="font-size: 40px">Submit</span></span>
+                  </div>
+                </div>
+            </div>
+              <% if notice.present? %>
+                  <div class="alert pv alert-dismissible ss" role="alert" style="width: 100%;text-align: center;" >
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <b> <%= notice %> </b>
+                  </div>
+              <% end %>
+            </div>
+          </li>
+          <li>
+
+              <%= render :partial => "welcome/caculator" %>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <a class="left carousel-control" href="index.html#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="index.html#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+<div class="welcome-index">
+  <div class="welcome-index-sub">
+    <h3>Welcome to <span style="color:#1B95E4; text-transform:uppercase;font-size:24px;">EasyWaya!</span> A free fully responsive <span style="color:#1B95E4; text-transform:uppercase;font-size:24px;"> GateWay  </span>online system</h3>
+  </div>
+  <div class="welcome-index-sub1" style="color:#1B95E4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="service-wrapper" style="color:#fff;padding-top: 10px" >
+            <%= image_tag "Cash_register.png" , :width=>"75%;",  :height=>"200px;" %>
+
+            <h4>Transactions are completed in 24
+              <br>hours and you get your money instantly!!</h4>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-wrapper" style="color:#fff;padding-top: 10px" >
+            <%= image_tag "rec.png" , :width=>"75%;",  :height=>"200px;" %>
+            <h4>We offer the best exchange <br>rate to Nigeria with no strings attached </h4>
+
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-wrapper" style="color:#fff;padding-top: 10px" >
+            <%= image_tag "23.png" , :width=>"75%;",  :height=>"200px;" %>
+            <h4>Just proide a bank account  <br>and you get your money <br>in there at NO COST.
+                 Yes! no hidden fee</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+      <div class="welcome-index-sub2" style="color:#1B95E4">
+        <footer class="footer" style="position: relative;top: 60px">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="widget clearfix">
+
+
+                  <p> <span style="font-size:24px; color:#0564e7;">EasyWaya</span> just like our name, our app and website are easy and very convenient for you to send money to anyone at anytime</p>
+                  <p>Just provide a bank account and you get your money anywhere at NO COST.
+                    Yes! no hidden fee.</p>
+                </div><!-- end clearfix -->
+              </div><!-- end col -->
+
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="widget clearfix">
+                  <div class="widget-title">
+                    <h3>Help And Support</h3>
+                  </div>
+
+                  <ul class="footer-links">
+                    <li><a href="#">How it Work</a></li>
+                    <li><a href="#">FAQ</li>
+                  </ul><!-- end links -->
+                </div><!-- end clearfix -->
+              </div><!-- end col -->
+
+              <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="widget clearfix">
+                  <div class="widget-title">
+                    <h3>Twitter Feed</h3>
+                  </div>
+
+                  <ul class="twitter-widget footer-links">
+                    <li><a href="#">Bidding Policy</a></li>
+                    <li><a href="#">Sending Policy</li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Privacy Policy</li>
+                  </ul><!-- end links -->
+                </div><!-- end clearfix -->
+              </div><!-- end col -->
+
+              <div class="col-md-2 col-sm-2 col-xs-12">
+                <div class="widget clearfix">
+                  <div class="widget-title">
+                    <h3>Join Us</h3>
+                  </div>
+                  <ul class="footer-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i> Google Plus</a></li>
+                  </ul><!-- end links -->
+                </div><!-- end clearfix -->
+              </div><!-- end col -->
+            </div><!-- end row -->
+          </div><!-- end container -->
+        </footer><!-- end footer -->
+     </div>
+</div>
+
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+        $("#flip2").click(function(){
+            $("#panel2").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#flip3").click(function(){
+            $("#panel3").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#flip4").click(function(){
+            $("#panel4").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#flip5").click(function(){
+            $("#panel5").slideToggle("slow");
+        });
+    });
+    $(document).ready(function(){
+        $("#flip6").click(function(){
+            $("#panel6").slideToggle("slow");
+        });
+    });
+</script>

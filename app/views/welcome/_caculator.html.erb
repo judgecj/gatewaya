@@ -1,0 +1,61 @@
+<style>
+    .rate_calc{
+        background-color: #fff;
+        opacity: 0.9;
+        height: auto;
+        padding: 5% 1%;
+        border-radius: 1%;
+        box-shadow: 1px 1px 5px #0593E7 ;
+        color: #000;
+        font-family: georgia;
+        padding: 12%;
+    }
+</style>
+<div style="width: 400px;height: 400px;position: relative;left: 500px;bottom: 260px">
+  <div class="rate_calc">
+    <div id="output" class="alert-success" style="padding: 5px">
+
+    </div>
+    <span style="color:#000;font-size:15px;margin-bottom:6px"><label>Converted Amount:</label></span>
+
+      <div class="form-group">
+       <input type="text" id="amount" class="form-control">
+
+      </div>
+      <div class="push2 form-group">
+        <label>From :</label>
+        <select id="from" class="form-control">
+          <option value="USD">US DOLLAR</option>
+        </select>
+      </div>
+      <div class="push1 form-group">
+        <label>To :</label>
+        <select id="to" class="form-control">
+          <option value="NGN">NIGERIA NAIRA</option>
+        </select>
+      </div>
+
+      <div class="all_convert_submit form-group">
+        <input  type="submit" name="check" style="width: 100%" class="btn btn-success" value="Continue" onclick=" currency_converter();">
+                                             <b style="position: relative;left: 140px">OR</b>
+        <input  type="submit" name="check" style="width: 100%" class="btn btn-primary " value="Buy Dollar" >
+      </div>
+
+  </div>
+  </div>
+
+<script type="text/javascript">
+    function currency_converter(){
+        var amount = document.getElementById("amount").value;
+        var f = document.getElementById("from");
+        var fv = f.options[f.selectedIndex].value;
+        var t = document.getElementById("to");
+        var tv =t.options[t.selectedIndex].value;
+        var int_amount = parseFloat(amount);
+        var percent = 0.5;
+        var new_amount = (int_amount + percent) * 314;
+        var output = document.getElementById("output");
+        output.innerHTML = amount + " From "+ fv + " To "+ tv + " is :" + new_amount;
+        //output.innerHTML = fv;
+    }
+</script>

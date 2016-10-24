@@ -1,0 +1,43 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome{
+  width: 1100px;
+  background: red;
+}
+.caropage{
+  background: url("387606063_408c203f6c_z (1).jpg");
+}
+.sign-up li{
+  display: inline-block;
+}
+.welcome-index{
+  width: 80%;
+  height: 10px;
+  position: relative;
+  bottom: 44px;
+}
+.welcome-index-sub{
+  background: #151515;
+  width: 125%;
+  height: 90px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
+.welcome-index-sub1{
+  background: #1B95E4;
+  width: 125%;
+  height: 350px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
+.welcome-index-sub2{
+  background: #151515;
+  width: 125%;
+  height: 270px;
+  color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
